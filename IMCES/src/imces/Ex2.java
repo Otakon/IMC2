@@ -138,9 +138,16 @@ public class Ex2 extends JFrame {
                 }//Fim da classe interna anônima
         );//fim da chamada para addActionListerner
     }
+    
+    public double Calculo(){
+        altura = Double.parseDouble(Faltura.getText());
+        altura /= 100;
+        massa = peso / (altura * altura);
+        return massa ;
+    }
 
 //método que realiza os calculos
-    private void Calculos() {
+    void Calculos() {
         try //tratador de erros com try e catch
         {
 //pega e converte os caracteres em ponto flutuante do campo Faltura para a variavel altura
